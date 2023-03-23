@@ -1,0 +1,373 @@
+
+User@DESKTOP-86HSBDS MINGW64 ~ (master)
+$ mkdir SI_2023_lab1_216092
+
+User@DESKTOP-86HSBDS MINGW64 ~ (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/User/.git/
+
+User@DESKTOP-86HSBDS MINGW64 ~ (master)
+$ cd SI_2023_lab1_216092
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git init
+Initialized empty Git repository in C:/Users/User/SI_2023_lab1_216092/.git/
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git branch -m main master
+error: refname refs/heads/main not found
+fatal: Branch rename failed
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git remote add origin https://github.com/LjupcheD14/SI_2023_lab1_216092.git
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ touch README.md
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git add README.md
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git commit -m "Initial commit"
+[master (root-commit) 89e8696] Initial commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ touch SILab1.java
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git add .
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git commit -m "Add java class"
+[master 69892ec] Add java class
+ 5 files changed, 72 insertions(+)
+ create mode 100644 .idea/.gitignore
+ create mode 100644 .idea/SI_2023_lab1_216092.iml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 SILab1.java
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git push origin master
+git Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (11/11), 1.63 KiB | 833.00 KiB/s, done.
+Total 11 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/LjupcheD14/SI_2023_lab1_216092.git
+ * [new branch]      master -> master
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git branch bug1
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git branch bug2
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git branch bug3
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (bug1)
+$ git add .
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (bug1)
+$ git commit -m "Fix wrong loop for reading"
+[bug1 be6aa95] Fix wrong loop for reading
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (bug1)
+$ git checkout bug2
+Switched to branch 'bug2'
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (bug2)
+$ git add .
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (bug2)
+$ git commit -m "Fix wrong condition in filterOddNumbers"
+[bug2 73c25c6] Fix wrong condition in filterOddNumbers
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+ create mode 100644 .idea/misc.xml
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (bug2)
+$ git checkout bug3
+Switched to branch 'bug3'
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (bug3)
+$ git add .
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (bug3)
+$ git commit -m "Fix method sumEvenNumbers"
+[bug3 6caf201] Fix method sumEvenNumbers
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (bug3)
+$ git push origin bug1
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (14/14), 1.86 KiB | 954.00 KiB/s, done.
+Total 14 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), done.
+remote:
+remote: Create a pull request for 'bug1' on GitHub by visiting:
+remote:      https://github.com/LjupcheD14/SI_2023_lab1_216092/pull/new/bug1
+remote:
+To https://github.com/LjupcheD14/SI_2023_lab1_216092.git
+ * [new branch]      bug1 -> bug1
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (bug3)
+$ git push origin bug2
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 589 bytes | 589.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'bug2' on GitHub by visiting:
+remote:      https://github.com/LjupcheD14/SI_2023_lab1_216092/pull/new/bug2
+remote:
+To https://github.com/LjupcheD14/SI_2023_lab1_216092.git
+ * [new branch]      bug2 -> bug2
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (bug3)
+$ git push origin bug3
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 316 bytes | 316.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'bug3' on GitHub by visiting:
+remote:      https://github.com/LjupcheD14/SI_2023_lab1_216092/pull/new/bug3
+remote:
+To https://github.com/LjupcheD14/SI_2023_lab1_216092.git
+ * [new branch]      bug3 -> bug3
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (bug3)
+$ git checkout master
+Switched to branch 'master'
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git merge bug1
+Updating 69892ec..be6aa95
+Merge made by the 'ort' strategy.
+ .idea/misc.xml | 4 ++++
+ SILab1.java    | 2 +-ertion(+), 1 deletion(-)
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+ create mode 100644 .idea/misc.xml2023_lab1_216092 (master)
+$ git push origin
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git merge bug2
+Already up to date.
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git merge bug3
+Auto-merging SILab1.java
+Merge made by the 'ort' strategy.
+ SILab1.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git push --set-upstream origin master
+To https://github.com/LjupcheD14/SI_2023_lab1_216092.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/LjupcheD14/SI_2023_lab1_216092.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git push --force
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git push origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git push origin *
+error: src refspec README.md does not match any
+error: src refspec SILab1.java does not match any
+error: failed to push some refs to 'https://github.com/LjupcheD14/SI_2023_lab1_216092.git'
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ ^C
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 737 bytes | 73.00 KiB/s, done.
+From https://github.com/LjupcheD14/SI_2023_lab1_216092
+   69892ec..62ada62  master     -> origin/master
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git merge
+fatal: No remote for the current branch.
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git push --set-upstream origin master
+To https://github.com/LjupcheD14/SI_2023_lab1_216092.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/LjupcheD14/SI_2023_lab1_216092.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git merge bug1
+Already up to date.
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git push --set-upstream origin master
+To https://github.com/LjupcheD14/SI_2023_lab1_216092.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/LjupcheD14/SI_2023_lab1_216092.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git push origin bug1
+Everything up-to-date
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git merge bug2
+Already up to date.
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git merge bug3
+Already up to date.
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git push origin .
+fatal: invalid refspec '.'
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git push origin *
+error: src refspec README.md does not match any
+error: src refspec SILab1.java does not match any
+error: failed to push some refs to 'https://github.com/LjupcheD14/SI_2023_lab1_216092.git'
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git push origin bug2
+Everything up-to-date
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git push origin bug3
+Everything up-to-date
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git remote -v
+origin  https://github.com/LjupcheD14/SI_2023_lab1_216092.git (fetch)
+origin  https://github.com/LjupcheD14/SI_2023_lab1_216092.git (push)
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git push origin bug1 --force
+Everything up-to-date
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git push origin --force
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git push --set-upstream origin master --force
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 650 bytes | 325.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To https://github.com/LjupcheD14/SI_2023_lab1_216092.git
+ + 62ada62...0ec4ae1 master -> master (forced update)
+branch 'master' set up to track 'origin/master'.
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ git rebase master
+Current branch master is up to date.
+
+User@DESKTOP-86HSBDS MINGW64 ~/SI_2023_lab1_216092 (master)
+$ touch logs.txt
